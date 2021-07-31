@@ -1,0 +1,102 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.quiz{
+    border-radius: 5px;
+    width : 60%;
+    background-color : rgb(131, 138, 156);
+    margin: auto;
+    padding:5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    padding:10px;
+    border-radius: 10px;
+    width:20%;
+    background-color: rgb(148, 213, 218);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+.btn{
+    display:flex;
+    direction:rtl;
+    justify-content: row-reverse;
+    margin-top: 10px;
+}
+
+.header{
+    display:flex;
+    justify-content:space-around;
+}
+.option{
+    background-color: blanchedalmond;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding:15px;
+    cursor:pointer;
+}
+
+input {
+    visibility:hidden;
+}
+
+img{
+    height:10%;
+    width:10%
+}
+.app{
+    position:relative;
+    
+}
+.result{
+    width: 50%;
+    background-color:rgb(227, 238, 227);
+    padding:10px;
+    display:none;
+    position:absolute;
+    top:30%;
+    left:25%;
+    z-index: 1;
+    
+    
+}
+.close{
+    display:flex;
+    direction:rtl;
+    font-size:30px;
+    font-weight: bold;
+    cursor:pointer;
+}
+@media only screen and (max-width: 600px){
+    .quiz{
+        border-radius: 5px;
+        width : 80%;
+        
+        background-color : rgb(131, 138, 156);
+        margin: auto;
+        padding:5%;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+    img{
+        height:20%;
+        width:20%
+    }
+    .header{
+        display:block;
+        font-size:80%;
+    }
+    button{
+        width:40%;
+        border-radius: 10px;
+        background-color: rgb(148, 213, 218);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       
+    }
+    .result{
+        width:70%;
+        left:13%;
+    }
+
+}
